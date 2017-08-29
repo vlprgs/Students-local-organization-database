@@ -9,11 +9,16 @@ body {
   background-position: center;
   background-size: cover;
 
+.container {
+  width: 1000px;
+  position: relative;
+  height: auto;
+  padding-left: 40%;
+
 }
-row {
-  display: block;
-  width: 100%
+
 }
+
 footer {
   opacity: 0.85;
   margin-top: 50px;

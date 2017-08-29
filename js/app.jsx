@@ -21,7 +21,7 @@ import {
         }
       }
       render() {
-        return <div>
+        return <div className="container">
         <header>
         <div className="Menu">
           <ul className="MenuList">
@@ -36,7 +36,7 @@ import {
       <row>
           {this.props.children}
         </row>
-          <footer>cokolwiek</footer>
+
           </div>
 
       }
@@ -114,7 +114,10 @@ import {
 
 document.addEventListener('DOMContentLoaded', function(){
     ReactDOM.render(
+      <div >
         <App/>,
+        <footer>cokolwiek</footer>,
+        </div>,
         document.getElementById('app')
     );
 });
