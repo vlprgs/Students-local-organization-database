@@ -1,0 +1,9 @@
+node_modules
+.idea
+.sass-sache
+Thumbs.db
+tile-wide.png
+tile.png
+package-lock.json
+favicon.ico
+apple-touch-icon.png
