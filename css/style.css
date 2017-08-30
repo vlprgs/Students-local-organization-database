@@ -2,9 +2,13 @@
   padding: 0;
   margin: 0;
 }
-body {
+#backgroundImage {
+  width: 100%;
+  height: auto;
   background-color: #DAD5EA;
   background-image: url("../img/kampusuwb.jpg");
+  display: inline-block;
+  position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -18,6 +22,7 @@ footer {
   opacity: 0.85;
   margin-top: 50px;
   display: inline-block;
+  position:sticky;
   border: 2px solid #262626;
   width: 100%;
   height: 3rem;
@@ -27,12 +32,18 @@ footer {
   font-weight: 100;
   text-align: center;
   font-family: sans-serif;
-
 }
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .Menu {
   opacity: 0.85;
   width: 100%;
   height: 4.3rem;
+  margin-right: 15%;
   background-color: #094785;
   border: 2px solid #262626;
   position: fixed;
@@ -69,7 +80,7 @@ footer {
   display: inline-block;
   border-radius: 10px;
   margin-top: 1rem;
-  margin-left: 78.5rem;
+  margin-left: 85%;
   color: black;
   height: 2rem;
   width: 2rem;
@@ -158,7 +169,7 @@ footer {
   float: left;
   background-color: white;
   display: flex;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-top: 10%;
   width: 300px;
   height: 400px;

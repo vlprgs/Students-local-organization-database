@@ -21,8 +21,9 @@ import {
         }
       }
       render() {
-        return <div>
+        return <div id="backgroundImage">
         <header>
+          <div >
         <div className="Menu">
           <ul className="MenuList">
             <li><Link to="/" className="MenuButton" >Strona główna</Link></li>
@@ -32,10 +33,11 @@ import {
           </ul>
           <ul className="styleList">S<li>PB</li><li>UwB</li><li>UMB</li></ul>
         </div>
+        </div>
       </header>
-      <row>
+      <main className="container">
           {this.props.children}
-        </row>
+        </main>
           <footer>cokolwiek</footer>
           </div>
 
