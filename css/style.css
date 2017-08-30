@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+
 #backgroundImage {
   width: 100%;
   height: auto;
@@ -12,17 +13,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
 
+.container {
+  width: 1000px;
+  position: relative;
+  height: auto;
 }
-row {
-  display: block;
-  width: 100%
-}
+
 footer {
   opacity: 0.85;
   margin-top: 50px;
   display: inline-block;
-  position:sticky;
+  position: sticky;
   border: 2px solid #262626;
   width: 100%;
   height: 3rem;
@@ -34,7 +37,7 @@ footer {
   font-family: sans-serif;
 }
 
-.container{
+.container {
   width: 1200px;
   margin: 0 auto;
 }
@@ -49,14 +52,12 @@ footer {
   position: fixed;
 }
 
-
 .MenuList {
   list-style: none;
-  display: flex;
+  display:flex;
   padding-left: 20%;
   position: fixed;
   transition: 0.5s all;
-
 }
 
 .MenuButton {
@@ -76,6 +77,7 @@ footer {
   font-family: 'Baloo Bhaijaan', cursive;
   text-decoration: none;
 }
+
 .styleList {
   display: inline-block;
   border-radius: 10px;
@@ -94,7 +96,7 @@ footer {
   text-decoration: none;
 }
 
-.styleList li{
+.styleList li {
   list-style: none;
   display: none;
   width: 100px;
@@ -102,12 +104,14 @@ footer {
   background-color: white;
   border: 1px solid black;
 }
-.styleList:hover{
+
+.styleList:hover {
   background-color: #1D028C;
   color: white;
   transition: 0.5s all;
 }
-.styleList:hover li{
+
+.styleList:hover li {
   margin-top: 5px;
   list-style: none;
   display: flex;
@@ -121,10 +125,10 @@ footer {
   transition: 1s all;
 }
 
-.MenuButton:hover{
-    background-color: #1D028C;
-    color: white;
-    transition: 0.5s all;
+.MenuButton:hover {
+  background-color: #1D028C;
+  color: white;
+  transition: 0.5s all;
 }
 
 .infoBox {
@@ -138,25 +142,23 @@ footer {
   height: 400px;
   border: 5px solid black;
   border-radius: 10px;
-
 }
 
 .infoBoxCircle {
   border: 2px solid black;
   border-radius: 50%;
   display: flex;
-  width: 100px;
-  height: 100px;
-  margin-left: 33%;
+  width: 120px;
+  height: 120px;
+  margin-left: 30%;
   margin-top: 15%;
-  margin-right: 33%;
   margin-bottom: 15%;
-  border-style:dotted;
+  border-style: dotted;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
-
 }
+
 .infoBoxInnerText {
   margin-top: 155%;
   display: flex;
@@ -164,6 +166,7 @@ footer {
   font-weight: 400;
   font-size: 16px;
 }
+
 .infoBoxUwB {
   display: flex;
   float: left;
@@ -175,7 +178,16 @@ footer {
   height: 400px;
   border: 5px solid black;
   border-radius: 10px;
+  text-decoration: none;
 }
+.infoBoxUwB .infoBoxCircle {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/w_uwb_kolor.jpg");
+  border: 2px solid white;
+}
+
 .infoBoxPB {
   display: flex;
   float: left;
@@ -187,7 +199,17 @@ footer {
   height: 400px;
   border: 5px solid black;
   border-radius: 10px;
+  text-decoration: none;
 }
+.infoBoxPB .infoBoxCircle {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/PB_logo-czarne.png");
+  background-color: white;
+  border: 1px solid white;
+}
+
 .infoBoxUMB {
   display: flex;
   float: left;
@@ -199,35 +221,66 @@ footer {
   height: 400px;
   border: 5px solid black;
   border-radius: 10px;
+  text-decoration: none;
 }
+.infoBoxUMB .infoBoxCircle {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/logo_umb.jpg");
+  background-color: white;
+  border: 1px solid white;
+}
+.infoBoxInnerText{
+  font-size: 24px;
+  font-style: none;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  float: left;
+  color: black;
+  margin-right: 20%
 
+}
 .infobox:hover {
   background-color: #1D028C;
   color: white;
   transition: 0.5s all;
   border: 5px solid white;
 }
-.infoBoxUwB:hover {
+
+.infoBoxUwB:hover  {
   background-color: #B40D0D;
   color: white;
   transition: 0.5s all;
   border: 5px solid white;
 }
+.infoBoxUwB:hover .infoBoxInnerText {
+  color: white;
+  transition: 0.5s all;
+}
+.infoBoxPB:hover .infoBoxInnerText {
+  color: white;
+  transition: 0.5s all;
+}
+
 .infoBoxPB:hover {
   background-color: #089A51;
   color: white;
   transition: 0.5s all;
   border: 5px solid white;
 }
+
 .infoBoxUMB:hover {
   background-color: #FBFB8D;
-  color: white;
+  color: black;
   transition: 0.5s all;
   border: 5px solid white;
 }
+
 .contactBox {
-  margin-top: 9%;
-  display: inline-block;
+  margin-top: 10%;
+  display: block;
   width: 700px;
   height: 400px;
   border: 5px solid black;
@@ -235,6 +288,7 @@ footer {
   background: white;
   border-radius: 5px;
 }
+
 .contactCircle {
   display: inline-block;
   height: 150px;
@@ -244,8 +298,34 @@ footer {
   margin-left: 40%;
   margin-top: 5%;
 }
+
 .contactInfo {
   font-size: 20px;
   text-align: center;
   padding-top: 15px;
+}
+
+.infoBoxPanel{
+  display: flex;
+  float: left;
+  background-color: white;
+  display: flex;
+  margin-left: 5%;
+  margin-top: 10%;
+  width: 300px;
+  height: 400px;
+  border: 5px solid black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.StudentPanel {
+  display: block;
+  width: 100%;
+  height: 20px;
+  color: white;
+  font-weight: 400;
+  background-color: hotpink;
+  text-align: center;
+  clear:both;
 }
