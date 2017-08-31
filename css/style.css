@@ -4,7 +4,7 @@
 }
 
 #backgroundImage {
-  width: 100%;
+  width: 100vw;
   height: auto;
   background-color: #DAD5EA;
   background-image: url("../img/kampusuwb.jpg");
@@ -13,10 +13,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
 }
 
 .container {
   width: 1000px;
+  height: auto;
   position: relative;
   height: auto;
 }
@@ -25,9 +27,10 @@ footer {
   opacity: 0.85;
   margin-top: 50px;
   display: inline-block;
+  position: -webkit-sticky;
   position: sticky;
   border: 2px solid #262626;
-  width: 100%;
+  width: 100vw;
   height: 3rem;
   background-color: #094785;
   font-size: 10px;
@@ -38,23 +41,25 @@ footer {
 }
 
 .container {
-  width: 1200px;
+  width: 90vw;
   margin: 0 auto;
 }
 
 .Menu {
   opacity: 0.85;
-  width: 100%;
+  width: 100vw;
   height: 4.3rem;
   margin-right: 15%;
   background-color: #094785;
   border: 2px solid #262626;
   position: fixed;
+  z-index: 5
 }
 
 .MenuList {
   list-style: none;
-  display:flex;
+  display: -webkit-box;
+  display: flex;
   padding-left: 20%;
   position: fixed;
   transition: 0.5s all;
@@ -66,16 +71,22 @@ footer {
   margin-top: 1rem;
   margin-left: 1.5rem;
   color: black;
-  height: 2rem;
-  width: 10rem;
+  height: 6vh;
+  width: 10vw;
   background-color: white;
   border: 1.5px solid white;
-  font-size: 1.2rem;
+  font-size: 1.4vw;
   font-weight: 100;
   text-align: center;
-  line-height: 2rem;
+
   font-family: 'Baloo Bhaijaan', cursive;
   text-decoration: none;
+}
+
+.MenuButton:hover {
+  background-color: #1D028C;
+  color: white;
+  transition: 0.5s all;
 }
 
 .styleList {
@@ -96,7 +107,7 @@ footer {
   text-decoration: none;
 }
 
-.styleList li {
+.styleList > li {
   list-style: none;
   display: none;
   width: 100px;
@@ -111,9 +122,10 @@ footer {
   transition: 0.5s all;
 }
 
-.styleList:hover li {
+.styleList:hover > li {
   margin-top: 5px;
   list-style: none;
+  display: -webkit-box;
   display: flex;
   float: left;
   width: 50px;
@@ -125,13 +137,8 @@ footer {
   transition: 1s all;
 }
 
-.MenuButton:hover {
-  background-color: #1D028C;
-  color: white;
-  transition: 0.5s all;
-}
-
 .infoBox {
+  display: -webkit-box;
   display: flex;
   float: left;
   background-color: white;
@@ -140,13 +147,22 @@ footer {
   margin-top: 10%;
   width: 300px;
   height: 400px;
+  margin-bottom: 20%;
   border: 5px solid black;
   border-radius: 10px;
+}
+
+.infoBox:hover {
+  background-color: #1D028C;
+  color: white;
+  transition: 0.5s all;
+  border: 5px solid white;
 }
 
 .infoBoxCircle {
   border: 2px solid black;
   border-radius: 50%;
+  display: -webkit-box;
   display: flex;
   width: 120px;
   height: 120px;
@@ -161,6 +177,7 @@ footer {
 
 .infoBoxInnerText {
   margin-top: 155%;
+  display: -webkit-box;
   display: flex;
   text-align: center;
   font-weight: 400;
@@ -168,18 +185,21 @@ footer {
 }
 
 .infoBoxUwB {
+  display: -webkit-box;
   display: flex;
   float: left;
   background-color: white;
   display: flex;
   margin-left: 5%;
   margin-top: 10%;
-  width: 300px;
-  height: 400px;
+  width: 18.75rem;
+  height: 25rem;
   border: 5px solid black;
   border-radius: 10px;
   text-decoration: none;
+  margin-bottom: 20%;
 }
+
 .infoBoxUwB .infoBoxCircle {
   background-position: center;
   background-repeat: no-repeat;
@@ -189,6 +209,7 @@ footer {
 }
 
 .infoBoxPB {
+  display: -webkit-box;
   display: flex;
   float: left;
   background-color: white;
@@ -201,6 +222,7 @@ footer {
   border-radius: 10px;
   text-decoration: none;
 }
+
 .infoBoxPB .infoBoxCircle {
   background-position: center;
   background-repeat: no-repeat;
@@ -211,6 +233,7 @@ footer {
 }
 
 .infoBoxUMB {
+  display: -webkit-box;
   display: flex;
   float: left;
   background-color: white;
@@ -223,6 +246,7 @@ footer {
   border-radius: 10px;
   text-decoration: none;
 }
+
 .infoBoxUMB .infoBoxCircle {
   background-position: center;
   background-repeat: no-repeat;
@@ -231,7 +255,8 @@ footer {
   background-color: white;
   border: 1px solid white;
 }
-.infoBoxInnerText{
+
+.infoBoxInnerText {
   font-size: 24px;
   font-style: none;
   font-weight: 400;
@@ -239,9 +264,9 @@ footer {
   text-align: center;
   float: left;
   color: black;
-  margin-right: 20%
-
+  margin-right: 20%;
 }
+
 .infobox:hover {
   background-color: #1D028C;
   color: white;
@@ -249,16 +274,18 @@ footer {
   border: 5px solid white;
 }
 
-.infoBoxUwB:hover  {
+.infoBoxUwB:hover {
   background-color: #B40D0D;
   color: white;
   transition: 0.5s all;
   border: 5px solid white;
 }
+
 .infoBoxUwB:hover .infoBoxInnerText {
   color: white;
   transition: 0.5s all;
 }
+
 .infoBoxPB:hover .infoBoxInnerText {
   color: white;
   transition: 0.5s all;
@@ -287,6 +314,7 @@ footer {
   margin-left: 22.5%;
   background: white;
   border-radius: 5px;
+  margin-bottom: 20%;
 }
 
 .contactCircle {
@@ -305,7 +333,8 @@ footer {
   padding-top: 15px;
 }
 
-.infoBoxPanel{
+.infoBoxPanel {
+  display: -webkit-box;
   display: flex;
   float: left;
   background-color: white;
@@ -327,5 +356,7 @@ footer {
   font-weight: 400;
   background-color: hotpink;
   text-align: center;
-  clear:both;
+  clear: both;
 }
+
+/*# sourceMappingURL=style.min.css.map */
