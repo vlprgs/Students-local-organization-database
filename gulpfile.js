@@ -20,12 +20,12 @@ gulp.task('browseSync', function() {
     browserSync.init({
         server: "./",
         notify: false
-    });
+    });    
 });
 
 
 gulp.task('sass', function() {
-    return gulp.src('scss/style.scss')
+    return gulp.src('src/scss/style.scss')
         .pipe(plumber({ //przeciwdziala bledom w pipe ktore np przerywaja watch
             errorHandler: handleError
         }))
@@ -40,12 +40,12 @@ gulp.task('sass', function() {
         }))
         .pipe(sourcemaps.write('.')) //po modyfikacjach na plikach zapisujemy w pamieci sourcemap
         .pipe(gulp.dest("css")) //i calosc zapisujemy w dest
-        .pipe(browserSync.stream({match: '**/*.css'}));
+        .pipe(browserSync.stream({match: '**/*.css'}));        
 });
 
 
 gulp.task('js', function() {
-    return gulp.src('js/**/*.js')
+    return gulp.src('src/js/**/*.js')
         .pipe(plumber({
             errorHandler: handleError
         }))
@@ -58,13 +58,13 @@ gulp.task('js', function() {
         }))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('js'))
-        .pipe(browserSync.stream({match: '**/*.js'}));
+        .pipe(browserSync.stream({match: '**/*.js'}));            
 });
 
 
-gulp.task('watch', function() {
-    gulp.watch('scss/**/*.scss', ['sass']);
-    gulp.watch('js/**/*.js', ['js']);        
+gulp.task('watch', function() {   
+    gulp.watch('src/scss/**/*.scss', ['sass']);    
+    gulp.watch('src/js/**/*.js', ['js']);        
     gulp.watch("*.html").on('change', browserSync.reload);
 });
 
