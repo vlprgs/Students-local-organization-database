@@ -64,11 +64,7 @@ gulp.task('js', function() {
 
 gulp.task('watch', function() {
     gulp.watch('scss/**/*.scss', ['sass']);
-<<<<<<< HEAD
     gulp.watch('js/**/*.js', ['js']);        
-=======
-    gulp.watch('js/**/*.js', ['js']);
->>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
     gulp.watch("*.html").on('change', browserSync.reload);
 });
 
