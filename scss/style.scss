@@ -5,7 +5,11 @@
 
 #backgroundImage {
   width: 100vw;
+<<<<<<< HEAD
   height: auto;
+=======
+  height: 90vh;
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
   background-color: #DAD5EA;
   background-image: url("../img/kampusuwb.jpg");
   display: inline-block;
@@ -14,6 +18,7 @@
   background-position: center;
   background-size: cover;
 }
+<<<<<<< HEAD
 input {
   background-color: white;
   border: 2px solid black;
@@ -31,22 +36,37 @@ input {
   width: 1000px;
   position: relative;
   height: auto;
+=======
+
+.container {
+  width: 1000px;
+  position: relative;
+  height: 100vh;
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
 }
 
 footer {
   opacity: 0.85;
+<<<<<<< HEAD
   margin-top: 50px;
+=======
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
   display: inline-block;
   position: sticky;
   border: 2px solid #262626;
   width: 100vw;
+<<<<<<< HEAD
   height: 3rem;
+=======
+  height: 10vh;
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
   background-color: #094785;
   font-size: 10px;
   color: white;
   font-weight: 100;
   text-align: center;
   font-family: sans-serif;
+<<<<<<< HEAD
   text{
 
     font-size: 10px;
@@ -61,6 +81,12 @@ footer {
 
 .container {
   width: 90vw;
+=======
+}
+
+.container {
+  width: 1200px;
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
   margin: 0 auto;
 }
 
@@ -72,12 +98,19 @@ footer {
   background-color: #094785;
   border: 2px solid #262626;
   position: fixed;
+<<<<<<< HEAD
   z-index: 5
+=======
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
 }
 
 .MenuList {
   list-style: none;
+<<<<<<< HEAD
   display: flex;
+=======
+  display:flex;
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
   padding-left: 20%;
   position: fixed;
   transition: 0.5s all;
@@ -87,7 +120,11 @@ footer {
   display: inline-block;
   border-radius: 10px;
   margin-top: 1rem;
+<<<<<<< HEAD
   margin-left: 1.5rem;
+=======
+  margin-left: 30%;
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
   color: black;
   height: 2rem;
   width: 10rem;
@@ -99,12 +136,15 @@ footer {
   line-height: 2rem;
   font-family: 'Baloo Bhaijaan', cursive;
   text-decoration: none;
+<<<<<<< HEAD
 
   &:hover {
     background-color: #1D028C;
     color: white;
     transition: 0.5s all;
   }
+=======
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
 }
 
 .styleList {
@@ -123,6 +163,7 @@ footer {
   line-height: 2rem;
   font-family: 'Baloo Bhaijaan', cursive;
   text-decoration: none;
+<<<<<<< HEAD
 
   > li {
     list-style: none;
@@ -154,11 +195,51 @@ footer {
   }
 }
 
+=======
+}
+
+.styleList li {
+  list-style: none;
+  display: none;
+  width: 100px;
+  height: 25px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.styleList:hover {
+  background-color: #1D028C;
+  color: white;
+  transition: 0.5s all;
+}
+
+.styleList:hover li {
+  margin-top: 5px;
+  list-style: none;
+  display: flex;
+  float: left;
+  width: 50px;
+  height: 25px;
+  font-size: 14px;
+  font-weight: 100;
+  background-color: white;
+  border: 1px solid black;
+  transition: 1s all;
+}
+
+.MenuButton { &hover {
+  background-color: #1D028C;
+  color: white;
+  transition: 0.5s all;
+}}
+
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
 .infoBox {
   display: flex;
   float: left;
   background-color: white;
   display: flex;
+<<<<<<< HEAD
   margin-left: 15%;
   margin-top: 10%;
   width: 800px;
@@ -172,6 +253,14 @@ footer {
     transition: 0.5s all;
     border: 5px solid white;
   }
+=======
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 50vw;
+  height: 80vh;
+  border: 5px solid black;
+  border-radius: 10px;
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
 }
 
 .infoBoxCircle {
@@ -209,6 +298,7 @@ footer {
   border: 5px solid black;
   border-radius: 10px;
   text-decoration: none;
+<<<<<<< HEAD
 
   &:hover {
     background-color: #B40D0D;
@@ -220,6 +310,10 @@ footer {
 
 .infoBoxUwB .infoBoxCircle {
   box-shadow: 0px 0px 10px 10px #888888;
+=======
+}
+.infoBoxUwB .infoBoxCircle {
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -239,6 +333,7 @@ footer {
   border: 5px solid black;
   border-radius: 10px;
   text-decoration: none;
+<<<<<<< HEAD
 
   &:hover {
     background-color: #089A51;
@@ -250,6 +345,10 @@ footer {
 
 .infoBoxPB .infoBoxCircle {
   box-shadow: 0px 0px 10px 10px #888888;
+=======
+}
+.infoBoxPB .infoBoxCircle {
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -270,6 +369,7 @@ footer {
   border: 5px solid black;
   border-radius: 10px;
   text-decoration: none;
+<<<<<<< HEAD
 
   &:hover {
     background-color: #FBFB8D;
@@ -281,6 +381,10 @@ footer {
 
 .infoBoxUMB .infoBoxCircle {
   box-shadow: 0px 0px 10px 10px #888888;
+=======
+}
+.infoBoxUMB .infoBoxCircle {
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -288,8 +392,12 @@ footer {
   background-color: white;
   border: 1px solid white;
 }
+<<<<<<< HEAD
 
 .infoBoxInnerText {
+=======
+.infoBoxInnerText{
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
   font-size: 24px;
   font-style: none;
   font-weight: 400;
@@ -297,6 +405,7 @@ footer {
   text-align: center;
   float: left;
   color: black;
+<<<<<<< HEAD
   margin-right: 20%;
 }
 
@@ -316,6 +425,45 @@ footer {
       transition: 0.5s all;
     }
   }
+=======
+  margin-right: 20%
+
+}
+.infobox:hover {
+  background-color: #1D028C;
+  color: white;
+  transition: 0.5s all;
+  border: 5px solid white;
+}
+
+.infoBoxUwB:hover  {
+  background-color: #B40D0D;
+  color: white;
+  transition: 0.5s all;
+  border: 5px solid white;
+}
+.infoBoxUwB:hover .infoBoxInnerText {
+  color: white;
+  transition: 0.5s all;
+}
+.infoBoxPB:hover .infoBoxInnerText {
+  color: white;
+  transition: 0.5s all;
+}
+
+.infoBoxPB:hover {
+  background-color: #089A51;
+  color: white;
+  transition: 0.5s all;
+  border: 5px solid white;
+}
+
+.infoBoxUMB:hover {
+  background-color: #FBFB8D;
+  color: black;
+  transition: 0.5s all;
+  border: 5px solid white;
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
 }
 
 .contactBox {
@@ -345,7 +493,11 @@ footer {
   padding-top: 15px;
 }
 
+<<<<<<< HEAD
 .infoBoxPanel {
+=======
+.infoBoxPanel{
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
   display: flex;
   float: left;
   background-color: white;
@@ -360,14 +512,21 @@ footer {
 }
 
 .StudentPanel {
+<<<<<<< HEAD
   position: relative;
   display: block;
   width: 100%;
   height: 10vh;
+=======
+  display: block;
+  width: 100%;
+  height: 20px;
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
   color: white;
   font-weight: 400;
   background-color: hotpink;
   text-align: center;
+<<<<<<< HEAD
   clear: both;
   z-index: 3;
 
@@ -415,4 +574,7 @@ footer {
   background-color: white;
   
 
+=======
+  clear:both;
+>>>>>>> eed9ba97ee0ddd5da5b9ed3a12778eb71b959dbe
 }
